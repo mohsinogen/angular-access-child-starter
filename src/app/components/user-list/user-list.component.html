@@ -1,0 +1,9 @@
+<div class="user-container">
+    <div class="user-card" *ngFor="let item of users">
+        <img src="{{item.picture.medium}}" >
+        <div class="user-details">
+            <h3>{{ item.name.first+" "+item.name.last }}</h3>
+            <h5>{{ item.email }}</h5>
+        </div>
+    </div>
+</div>
