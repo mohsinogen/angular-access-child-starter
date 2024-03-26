@@ -13,4 +13,8 @@ import { UserListComponent } from './components/user-list/user-list.component';
 })
 export class AppComponent {
 
+  fetchUsersHandler(){}
+
+  deleteLastUserHandler(){}
+
 }

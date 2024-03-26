@@ -16,7 +16,7 @@ export class UserListComponent {
 
   users: User[] = [];
 
-  fetchUsers() {
+  fetchUser() {
     this.http.get<{results: [User]}>('https://randomuser.me/api/').subscribe({
       next: (data) => {
         this.users.push(data.results[0])
